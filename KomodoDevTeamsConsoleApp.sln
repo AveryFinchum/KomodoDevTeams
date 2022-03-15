@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoDevTeamsConsoleApp", "KomodoDevTeamsConsoleApp\KomodoDevTeamsConsoleApp.csproj", "{F5BDF53F-C347-4E86-B74F-93EE216075B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5BDF53F-C347-4E86-B74F-93EE216075B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BDF53F-C347-4E86-B74F-93EE216075B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BDF53F-C347-4E86-B74F-93EE216075B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BDF53F-C347-4E86-B74F-93EE216075B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6B1B2A7-8EA7-41C1-BDFD-E84E111CACA8}
+	EndGlobalSection
+EndGlobal
