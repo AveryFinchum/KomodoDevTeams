@@ -6,24 +6,28 @@ using System.Threading.Tasks;
 
 namespace KomodoDevTeamsConsoleApp.UI
 {
-    internal class KomodoUI
+    internal class Program
     {
-        private readonly StreamingContentRepository _repo = new StreamingContentRepository();
-        private readonly IConsole _console;
+        //private readonly StreamingContentRepository _repo = new StreamingContentRepository();
+        private readonly KomodoConsole _console;
 
-        public ProgramUI(IConsole console) => _console = console;
+        public Program(IConsole console) => _console = console;
 
 
         public void Run()
         {
             SeedContent();
+            _console.startUp();
             RunMenu();
         }
 
         private void SeedContent()
         {
             _console.Clear();
-            _console.WriteLine("Would you like to ");
+            if(_console.BoolQuestion("Would you like to start the repositories with seed content?"))
+            {
+                //seedContent();
+            }
         }
 
         private void RunMenu()
@@ -37,7 +41,7 @@ namespace KomodoDevTeamsConsoleApp.UI
                     "1. Show all Conternt \n" +
                     "2. Get content by title\n" +
                     "3. Get content by minimum star rating\n" +
-                    "4. Add conternt to directory\n" +
+                    "4. Add content to directory\n" +
                     "5. Update conternt in directory\n" +
                     "6. Remove conternt in directory\n" +
                     "7. Exit");
@@ -71,7 +75,7 @@ namespace KomodoDevTeamsConsoleApp.UI
                         break;
                     default:
                         _console.WriteLine("Please enter a valid number between 1 and 7:");
-                        _console.ReadKey();
+                        KomodoConsole.ReadKey();
                         break;
                 }
             }
