@@ -8,8 +8,7 @@ namespace KomodoDevTeamsConsoleApp
 {
     public class DevTeam
     {
-        private string _name;
-        protected List<Developer> _DevList = new List<Developer>();
+        private string _teamName;
 
         public DevTeam() { }
         public DevTeam(string name)
@@ -17,12 +16,10 @@ namespace KomodoDevTeamsConsoleApp
             SetName(name);
         }
 
-
         public void SetName(string name)
         {
-            _name = name;
+            _teamName = name;
         }
-
 
         public Guid guid
         {
@@ -38,9 +35,5 @@ namespace KomodoDevTeamsConsoleApp
         }
 
         protected Guid DevGuid;
-
-
-
-
     }
 }
